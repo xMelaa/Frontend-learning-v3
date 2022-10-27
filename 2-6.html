@@ -16,43 +16,55 @@
     />
 
     <style>
-      /* Styling for demo purposes */
-      section > div {
-        background-color: rgb(179, 215, 215);
-        display: flex;
-        margin-bottom: 1rem;
+      *{
+        box-sizing: border-box;
       }
 
-      div div {
-        background-color: rgb(142, 181, 181);
+      .card{
+        border-radius: 10px;
+        color: white;
+        width: 350px;
+        
       }
+
+      #total{
+        background-color: #132A3B;
+      }
+
+      #sale{
+        background-color: #1F5475;
+      }
+      
+      #rental{
+        background-color: #F66A11;
+      }      
     </style>
   </head>
   <body>
     <section class="learn">
       <!-- Practice area start -->
 
-      <div class="total">
-        <div class="icon"></div>
+      <div class="card" id="total">
+        <div class="icon"><img src="images/real-estate-statistics/house-chimney.svg" alt="Icon"></div>
         <div class="info">
-          <div class="number">510</div>
-          <div class="description">Properties is total</div>
+          <h2>510</h2>
+          <p>Properties is total</p>
         </div>
       </div>
 
-      <div class="sale">
-        <div class="icon"></div>
+      <div class="card" id="sale">
+        <div class="icon"><img src="images/real-estate-statistics/cart-plus.svg" alt="Icon"></div>
         <div class="info">
-          <div class="number">253</div>
-          <div class="description">Properties for sale</div>
+          <h2>253</h2>
+          <p>Properties for sale</p>
         </div>
       </div>
 
-      <div class="rental">
-        <div class="icon"></div>
+      <div class="card" id="rental">
+        <div class="icon"><img src="images/real-estate-statistics/user-check.svg" alt="Icon"></div>
         <div class="info">
-          <div class="number">257</div>
-          <div class="description">Properties for rental</div>
+          <h2>257</h2>
+          <p>Properties for rental</p>
         </div>
       </div>
 
