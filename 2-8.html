@@ -16,27 +16,72 @@
     />
   </head>
 
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    .card{
+      color: rgb(20, 41, 58);
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .card p{
+      color: rgba(20, 41, 58, 0.8);
+    }
+
+    .card a{
+      color: #F67421;
+      text-decoration: none;
+    }
+
+    .card a:hover{
+      color: rgb(20, 41, 58);
+    }
+
+    .card a:active{
+      color: rgba(20, 41, 58, .5);
+    }
+
+    .card h1{
+      font-size: 1.75em;
+      font-weight: 900;
+    }
+
+    p span{
+      font-size: 0.75em;
+      font-weight: 700;
+      line-height: 1.8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+  </style>
+
   <body>
     <section class="learn">
       <!-- Practice area start -->
 
-      envelope image goes here
-      <h1>Let's get in touch</h1>
-      <p>
-        9 Augusta Street<br />
-        Fair Lawn, NJ 07410
-      </p>
-	  <hr>
-      <p>
-        <span>email</span><br />
-        <a href="">chuck@roundhouse.com</a>
-      </p>
+      <div class="card">
+        <img src="images/envelopes-bulk.svg" />
+        <h1>Let's get in touch</h1>
+        <p>
+          9 Augusta Street<br />
+          Fair Lawn, NJ 07410
+        </p>
+        <hr />
+        <p>
+          <span>email</span><br />
+          <a href="">chuck@roundhouse.com</a>
+        </p>
 
-      <p>
-        <span>phone</span><br />
-        <a href="">+1-202-555-0125</a>
-      </p>
-
+        <p>
+          <span>phone</span><br />
+          <a href="">+1-202-555-0125</a>
+        </p>
+      </div>
       <!-- Practice area end -->
     </section>
 

@@ -14,6 +14,32 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      *{
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+      }
+
+      form div{
+        margin-bottom: 1rem;
+      }
+
+      form label{
+        display: block;
+      }
+
+
+      button{
+        background-color: #7C47C0;
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 5px;
+        font-weight: 600;   
+        text-align: center;     
+        width: 100%;
+      }
+    </style>
   </head>
 
   <body>
@@ -33,9 +59,10 @@
           <input type="password" name="login-password" id="login-password" />
         </div>
 
-        <label for="login-remember">
+        <div><label for="login-remember">
 			<input type="checkbox" name="login-remember" id="login-remember" />    REMEMBER ME
 		</label>
+    </div>
 		<button>Sign in</button>
       </form>
 
