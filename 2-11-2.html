@@ -14,6 +14,96 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1 {
+        font-weight: 900;
+        font-size: 30px;
+        color: #132a3b;
+      }
+
+      div {
+        display: flex;
+        width: 100%;
+        column-gap: 16px;
+      }
+
+      textarea,
+      select,
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 16px;
+        border: solid 1px rgb(179, 179, 179);
+        color: #132a3b;
+        cursor: pointer;
+      }
+
+      textarea:disabled,
+      select:disabled,
+      input[type="text"]:disabled,
+      input[type="number"]:disabled {
+        color: rgb(163, 163, 163);
+        background-color: rgb(243, 244, 245);
+      }
+
+      label {
+        margin-bottom: 8px;
+        color: #132a3b;
+      }
+
+      .title {
+        font-weight: 600;
+      }
+
+      .option {
+        padding-right: 30px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .samples,
+      .sizes {
+        margin-top: 5px;
+      }
+
+      input[type="checkbox"],
+      input[type="radio"] {
+        margin-right: 14px;
+        width: 18px;
+        height: 18px;
+      }
+
+      /*input[type="checkbox"]:checked, input[type="radio"]:checked{
+        accent-color: white;
+
+      }*/
+
+      .data {
+        flex-direction: column;
+        margin-top: 25px;
+      }
+
+      .footer {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+      }
+
+      .btn {
+        background-color: #475ac0;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        padding: 14px 26px;
+        cursor: pointer;
+      }
+    </style>
   </head>
 
   <body class="flip">
@@ -23,8 +113,8 @@
       <h1>Your Order</h1>
       <form action="" method="get">
         <div>
-          <div>
-            <label for="name-order">Name</label>
+          <div class="data">
+            <label class="title" for="name-order">Name</label>
             <input
               type="text"
               name="name-order"
@@ -32,8 +122,8 @@
               placeholder="Your full name"
             />
           </div>
-          <div>
-            <label for="email-order">Email address</label>
+          <div class="data">
+            <label class="title" for="email-order">Email address</label>
             <input
               type="text"
               name="email-order"
@@ -44,19 +134,21 @@
           </div>
         </div>
 
-        <div>
-          <label for="address-order-1">Address</label>
-          <input type="text" name="address-order-1" id="address-order-1" />
-          <input type="text" name="address-order-2" id="address-order-2" />
+        <div class="data">
+          <label class="title" for="address-order-1">Address</label>
+          <div class="address">
+            <input type="text" name="address-order-1" id="address-order-1" />
+            <input type="text" name="address-order-2" id="address-order-2" />
+          </div>
         </div>
 
         <div>
-          <div>
-            <label for="city-order">City</label>
+          <div class="data">
+            <label class="title" for="city-order">City</label>
             <input type="text" name="city-order" id="city-order" />
           </div>
-          <div>
-            <label for="state-order">State</label>
+          <div class="data">
+            <label class="title" for="state-order">State</label>
             <select type="" name="state-order" id="state-order">
               <option value="Alabama">Alabama</option>
               <option value="Alaska">Alaska</option>
@@ -64,88 +156,96 @@
               <option value="Arkansas">Arkansas</option>
             </select>
           </div>
-          <div>
-            <label for="zip-order">ZIP</label>
+          <div class="data">
+            <label class="title" for="zip-order">ZIP</label>
             <input type="number" name="zip-order" id="zip-order" />
           </div>
         </div>
 
-        <div>
-          <label> What color samples should we send you?</label>
-          <label for="sample-white">
-            <input
-              type="checkbox"
-              name="sample-color"
-              id="sample-white"
-              value="white"
-              disabled
-            />
-            White
-          </label>
-          <label for="sample-magenta"
-            ><input
-              type="checkbox"
-              name="sample-color"
-              id="color-magenta"
-              value="magenta"
-              checked
-            />
-            Magenta</label
-          >
+        <div class="data">
+          <label class="title"> What color samples should we send you?</label>
+          <div class="samples">
+            <label class="option" for="sample-white">
+              <input
+                type="checkbox"
+                name="sample-color"
+                id="sample-white"
+                value="white"
+                disabled
+              />
+              White
+            </label>
+            <label class="option" for="sample-magenta"
+              ><input
+                type="checkbox"
+                name="sample-color"
+                id="color-magenta"
+                value="magenta"
+                checked
+              />
+              Magenta</label
+            >
 
-          <label for="sample-coral"
-            ><input
-              type="checkbox"
-              name="color-coral"
-              id="color-coral"
-              value="coral"
-            />
-            Coral</label
-          >
-          <label for="sample-burgundy">
-            <input
-              type="checkbox"
-              name="sample-color"
-              id="color-burgundy"
-              value="burgundy"
-              checked
-            />
-            Burgundy</label
-          >
-          <label for="sample-charcoal"
-            ><input
-              type="checkbox"
-              name="sample-color"
-              id="color-charcoal"
-              value="charcoal"
-            />
-            Charcoal</label
-          >
+            <label class="option" for="sample-coral"
+              ><input
+                type="checkbox"
+                name="color-coral"
+                id="color-coral"
+                value="coral"
+              />
+              Coral</label
+            >
+            <label class="option" for="sample-burgundy">
+              <input
+                type="checkbox"
+                name="sample-color"
+                id="color-burgundy"
+                value="burgundy"
+                checked
+              />
+              Burgundy</label
+            >
+            <label class="option" for="sample-charcoal"
+              ><input
+                type="checkbox"
+                name="sample-color"
+                id="color-charcoal"
+                value="charcoal"
+              />
+              Charcoal</label
+            >
+          </div>
         </div>
 
-        <div>
-          <label> How large is your team? </label>
-          <label for="size-1">
-            <input type="radio" name="team-size" id="size-1" value="1-5" />1-5
-            people
-          </label>
+        <div class="data">
+          <label class="title"> How large is your team? </label>
+          <div class="sizes">
+            <label class="option" for="size-1">
+              <input type="radio" name="team-size" id="size-1" value="1-5" />1-5
+              people
+            </label>
 
-          <label for="size-2"
-            ><input
-              type="radio"
-              name="team-size"
-              id="size-2"
-              value="6-10"
-              checked
-            />6-10 people</label
-          >
-          <label for="size-3"
-            ><input type="radio" name="team-size" id="size-3" value="10+" />10+
-            people</label
-          >
+            <label class="option" for="size-2"
+              ><input
+                type="radio"
+                name="team-size"
+                id="size-2"
+                value="6-10"
+                checked
+              />6-10 people</label
+            >
+            <label class="option" for="size-3"
+              ><input
+                type="radio"
+                name="team-size"
+                id="size-3"
+                value="10+"
+              />10+ people</label
+            >
+          </div>
         </div>
-        <div>
-          <label for="comments-order">Comments</label>
+        <div class="data">
+          <label class="title" for="comments-order">Comments</label>
           <textarea
             type="text"
             name="comments-order"
@@ -155,14 +255,13 @@
           ></textarea>
         </div>
 
-        <div>
+        <div class="footer">
           <label for="offers">
             <input type="checkbox" name="offers" id="offers" /> Sign up for
             special offers
           </label>
-		  <input type="submit" value="Place order">
+          <input class="btn" type="submit" value="Place order" />
         </div>
-     
       </form>
 
       <!-- Practice area end -->

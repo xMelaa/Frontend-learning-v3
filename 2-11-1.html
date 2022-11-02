@@ -15,29 +15,60 @@
       rel="stylesheet"
     />
     <style>
-      *{
-        font-family: 'Poppins', sans-serif;
+      * {
+        font-family: "Poppins", sans-serif;
         box-sizing: border-box;
       }
 
-      form div{
+      form div {
         margin-bottom: 1rem;
       }
 
-      form label{
+      form label {
         display: block;
+        font-weight: 600;
+        font-size: 14px;
+        margin: 4px 0;
       }
 
+      h1 {
+        font-weight: 900;
+        font-size: 30px;
+      }
 
-      button{
-        background-color: #7C47C0;
+      #login-email,
+      #login-password {
+        border: none;
+        background-color: #f3f4f5;
+        border-radius: 6px;
+        padding: 10px;
+        width: 100%;
+        margin: 6px 0;
+        color: rgb(34, 34, 34);
+      }
+
+      #login-remember {
+        margin: 10px 8px 10px 0;
+        width: 16px;
+        height: 16px;
+      }
+
+      #login-remember:checked {
+        accent-color: rgb(255, 255, 255);
+        color: black;
+        outline: 1px solid black;
+      }
+
+      button {
+        background-color: #7c47c0;
         color: white;
         border: none;
         padding: 15px 20px;
         border-radius: 5px;
-        font-weight: 600;   
-        text-align: center;     
+        font-weight: 600;
+        text-align: center;
         width: 100%;
+        font-size: 16px;
       }
     </style>
   </head>
@@ -59,14 +90,14 @@
           <input type="password" name="login-password" id="login-password" />
         </div>
 
-        <div><label for="login-remember">
-			<input type="checkbox" name="login-remember" id="login-remember" />    REMEMBER ME
-		</label>
-    </div>
-		<button>Sign in</button>
+        <div>
+          <label for="login-remember">
+            <input type="checkbox" name="login-remember" id="login-remember" />
+            REMEMBER ME
+          </label>
+        </div>
+        <button>Sign in</button>
       </form>
-
-      
 
       <!-- Practice area end -->
     </section>
