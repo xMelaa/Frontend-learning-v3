@@ -16,28 +16,50 @@
     />
 
     <style>
-      *{
+      * {
         box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
       }
 
-      .card{
+      .card {
         border-radius: 10px;
         color: white;
         width: 350px;
-        
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
       }
 
-      #total{
-        background-color: #132A3B;
+      .info {
+        padding: 25px 0;
       }
 
-      #sale{
-        background-color: #1F5475;
+      h2 {
+        margin-bottom: 5px;
+        margin-top: 0;
+        font-size: 28px;
       }
-      
-      #rental{
-        background-color: #F66A11;
-      }      
+
+      p {
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+
+      .icon {
+        padding: 30px;
+      }
+
+      #total {
+        background-color: #132a3b;
+      }
+
+      #sale {
+        background-color: #1f5475;
+      }
+
+      #rental {
+        background-color: #f66a11;
+      }
     </style>
   </head>
   <body>
@@ -45,7 +67,12 @@
       <!-- Practice area start -->
 
       <div class="card" id="total">
-        <div class="icon"><img src="images/real-estate-statistics/house-chimney.svg" alt="Icon"></div>
+        <div class="icon">
+          <img
+            src="images/real-estate-statistics/house-chimney.svg"
+            alt="Icon"
+          />
+        </div>
         <div class="info">
           <h2>510</h2>
           <p>Properties is total</p>
@@ -53,7 +80,9 @@
       </div>
 
       <div class="card" id="sale">
-        <div class="icon"><img src="images/real-estate-statistics/cart-plus.svg" alt="Icon"></div>
+        <div class="icon">
+          <img src="images/real-estate-statistics/cart-plus.svg" alt="Icon" />
+        </div>
         <div class="info">
           <h2>253</h2>
           <p>Properties for sale</p>
@@ -61,7 +90,9 @@
       </div>
 
       <div class="card" id="rental">
-        <div class="icon"><img src="images/real-estate-statistics/user-check.svg" alt="Icon"></div>
+        <div class="icon">
+          <img src="images/real-estate-statistics/user-check.svg" alt="Icon" />
+        </div>
         <div class="info">
           <h2>257</h2>
           <p>Properties for rental</p>

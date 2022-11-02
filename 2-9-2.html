@@ -1,44 +1,136 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>HTML and CSS for Complete Beginners: Example 2-9-2</title>
+    <title>HTML and CSS for Complete Beginners: Example 2-9-2</title>
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
-	</head>
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<body>
-		<section class="learn">
-			<!-- Practice area start -->
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      width: 800px;
+    }
 
-			<h1>Application menu</h1>
-			<ul>
-				<li>Dashboard</li>
-				<li>Pages</li>
-				<li>Posts</li>
-				<li>Media</li>
-				<ul>
-					<li>Media library</li>
-					<li>Add media</li>
-					<li>Media statstics</li>
-				</ul>
-				<li>Users</li>
-				<li>Settings</li>
-			</ul>
+    h1 {
+      font-weight: 900;
+      color: #132a3b;
+      text-align: center;
+      font-size: 28px;
+    }
 
-			<!-- Practice area end -->
-		</section>
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      color: #425562;
+    }
 
-		<section class="preview" data-content="lesson 2-9: Using Lists">
-			<img width="458px" src="images/reference/menu.png" alt="Reference image" />
+    ul {
+      line-height: 40px;
+      margin-left: -25px;
+    }
 
-			<p>Icons from Envato Elements: <br><br><a href="https://elements.envato.com/320-icons-outline-style-AN3NY5" target="_blank">320 + icons outline style</a></p>
-		</section>
-	</body>
+    ul ul {
+      background-color: #f3f4f5;
+      line-height: 30px;
+      padding: 25px 40px;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+
+    .icon {
+      padding-right: 15px;
+      opacity: 50%;
+    }
+
+    #Media {
+      opacity: 100%;
+    }
+  </style>
+
+  <body>
+    <section class="learn">
+      <!-- Practice area start -->
+
+      <h1>Application Menu</h1>
+      <ul>
+        <li>
+          <img
+            src="images/example/menu/menu-icon-1.svg"
+            class="icon"
+            id="Dashboard"
+          />Dashboard
+        </li>
+        <li>
+          <img
+            src="images/example/menu/menu-icon-2.svg"
+            class="icon"
+            id="Pages"
+          />Pages
+        </li>
+        <li>
+          <img
+            src="images/example/menu/menu-icon-3.svg"
+            class="icon"
+            id="Posts"
+          />Posts
+        </li>
+        <li>
+          <img
+            src="images/example/menu/menu-icon-4.svg"
+            class="icon"
+            id="Media"
+          /><strong>Media</strong>
+        </li>
+        <ul>
+          <li>Media library</li>
+          <li>Add media</li>
+          <li>Media statstics</li>
+        </ul>
+        <li>
+          <img
+            src="images/example/menu/menu-icon-5.svg"
+            class="icon"
+            id="Users"
+          />Users
+        </li>
+        <li>
+          <img
+            src="images/example/menu/menu-icon-6.svg"
+            class="icon"
+            id="Settings"
+          />Settings
+        </li>
+      </ul>
+
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="lesson 2-9: Using Lists">
+      <img
+        width="458px"
+        src="images/reference/menu.png"
+        alt="Reference image"
+      />
+
+      <p>
+        Icons from Envato Elements: <br /><br /><a
+          href="https://elements.envato.com/320-icons-outline-style-AN3NY5"
+          target="_blank"
+          >320 + icons outline style</a
+        >
+      </p>
+    </section>
+  </body>
 </html>
