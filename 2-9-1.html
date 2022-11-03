@@ -15,37 +15,112 @@
       rel="stylesheet"
     />
   </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      color: #3a4d5c;
+    }
+
+    .learn {
+      width: 400px;
+    }
+
+    h1 {
+      font-weight: 900;
+      margin-bottom: 40px;
+      color: #132a3b;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #132a3b;
+    }
+
+    .recipe-photo {
+      width: 400px;
+      margin-left: -33px;
+    }
+
+    .steps {
+      background-color: #f9f7f4;
+      padding: 10px 20px;
+      margin: 30px 0;
+    }
+
+    ul,
+    ol {
+      list-style-position: outside;
+      padding-left: 30px;
+    }
+
+    li {
+      font-size: 14px;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+    }
+
+    button {
+      background-color: white;
+      color: #c0477a;
+      border: solid 3px #c0477a;
+      border-radius: 50px;
+      padding: 14px 90px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  </style>
 
   <body>
     <section class="learn">
       <!-- Practice area start -->
 
-      <h1>Classic cheesecake</h1>
+      <div class="recipe">
+        <h1>Classic cheesecake</h1>
 
-      <img src="images/example/cheesecake.jpg" alt="cheesecake with blueberries">cheesecake image goes here
+        <img
+          src="images/example/cheesecake.jpg"
+          alt="cheesecake with blueberries"
+          class="recipe-photo"
+        />
 
-      <div>
         <div>
-			<h2>Ingredients</h2>
-			<ul>
-				<li>Four 8-ounce blocks of cream cheese</li>
-				<li>1 cup of sugar</li>
-				<li>1 cup of sour cream</li>
-				<li>1 teaspoon of vanilla extract</li>
-				<li>3 eggs</li>
-			</ul>
-		</div>
-        <div>
-          <h2>Steps</h2>
-		  <ol>
-			<li>Mix the ingredients</li>
-			<li>Add the sugar and vanilla extract</li>
-			<li>Cool it in the fridge</li>
-			<li>Enjoy!</li>
-		  </ol>
+          <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+              <li>Four 8-ounce blocks of cream cheese</li>
+              <li>1 cup of sugar</li>
+              <li>1 cup of sour cream</li>
+              <li>1 teaspoon of vanilla extract</li>
+              <li>3 eggs</li>
+            </ul>
+          </div>
+          <div class="steps">
+            <h2>Steps</h2>
+            <ol>
+              <li>Mix the ingredients</li>
+              <li>Add the sugar and vanilla extract</li>
+              <li>Cool it in the fridge</li>
+              <li>Enjoy!</li>
+            </ol>
+          </div>
+
+          <div class="button">
+            <button class="save-recipe">
+              <img src="images/example/bookmark.svg" alt="bookmark icon" />
+              Save this recipe
+            </button>
+          </div>
         </div>
-
-        <button class="save-recipe"><a href=""><img src="images/example/bookmark.svg" alt="bookmark icon" >icon Save this recipe</a></button>
       </div>
 
       <!-- Practice area end -->

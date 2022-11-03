@@ -19,10 +19,12 @@
       * {
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
+        color: #132a3b;
       }
 
       h1 {
         font-weight: 900;
+        font-size: 30px;
       }
 
       .wrapper {
@@ -30,38 +32,73 @@
         gap: 20px;
       }
 
-      .widget {
-        width: 300px;
-        padding: 2rem;
-		border: 1px solid #DCDEE2;
-		border-radius: 8px;
+      h2 {
+        margin-bottom: 0;
+        margin-top: 30px;
       }
 
-	  .widget:hover{
-		border-color: #2a343f6b;
-	  }
+      p {
+        margin-top: 0;
+      }
 
-	  .main-icon{
-		display: block;
-		margin-bottom: 2rem;
-	  }
+      .percent {
+        margin: 40px 0;
+        align-items: center;
+      }
+
+      .widget {
+        width: 260px;
+        padding: 2rem;
+        border: 1px solid #dcdee2;
+        border-radius: 8px;
+      }
+
+      .widget:hover {
+        border-color: #2a343f6b;
+      }
+
+      .main-icon {
+        display: block;
+        margin-bottom: 2rem;
+      }
       .widget img {
         width: 4rem;
       }
 
       .widget p img {
         width: 1.25rem;
+        vertical-align: middle;
+        margin-right: 2px;
       }
 
       .widget button img {
         height: 1rem;
+        vertical-align: middle;
+        width: 30px;
       }
 
       .widget button {
-        padding: 8px 24px;
-		background-color: white;
-		border: 1px solid #3c4c5a;
-		border-radius: 4px;
+        padding: 8px 18px 8px 24px;
+        background-color: white;
+        border: 1px solid #3c4c5a;
+        color: #3c4c5a;
+        border-radius: 4px;
+        font-weight: 600;
+      }
+
+      .up-percent {
+        color: #70caa3;
+        font-size: 14px;
+      }
+
+      .low-percent {
+        color: #db7783;
+        font-size: 14px;
+      }
+
+      .than-last-month {
+        font-size: 12px;
+        color: rgb(175, 175, 175);
       }
     </style>
   </head>
@@ -80,11 +117,10 @@
           />
           <h2>$4,502</h2>
           <p>Earned this month</p>
-          <p>
-            <img
-              src="images/example/icon-arrow-green.svg"
-              alt="Arrow green"
-            />+6.05% <span>than last month</span>
+          <p class="percent">
+            <img src="images/example/icon-arrow-green.svg" alt="Arrow green" />
+            <span class="up-percent">+6.05%</span>
+            <span class="than-last-month">than last month</span>
           </p>
           <button>
             Earnings
@@ -99,11 +135,10 @@
           />
           <h2>22</h2>
           <p>New Sales</p>
-          <p>
-            <img
-              src="images/example/icon-arrow-green.svg"
-              alt="Arrow green"
-            />+16.64% <span>than last month</span>
+          <p class="percent">
+            <img src="images/example/icon-arrow-green.svg" alt="Arrow green" />
+            <span class="up-percent">+16.64% </span
+            ><span class="than-last-month">than last month</span>
           </p>
           <button>
             Sales
@@ -118,9 +153,10 @@
           />
           <h2>7</h2>
           <p>New comments</p>
-          <p>
-            <img src="images/example/icon-arrow-red.svg" alt="Arrow red" /> -19%
-            <span>than last month</span>
+          <p class="percent">
+            <img src="images/example/icon-arrow-red.svg" alt="Arrow red" />
+            <span class="low-percent">-19%</span>
+            <span class="than-last-month">than last month</span>
           </p>
           <button>
             Comments

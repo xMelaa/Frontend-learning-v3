@@ -1,69 +1,104 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>HTML and CSS for Complete Beginners: Example 3-11-1</title>
+    <title>HTML and CSS for Complete Beginners: Example 3-11-1</title>
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-		<style>
-			* {
-				box-sizing: border-box;
-			}
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-			body {
-				font-family: 'Poppins', sans-serif;
-			}
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #132a3b;
+      }
 
-			.plan-features {
-				padding: 0;
-				list-style: circle inside url('images/example/green-checkmark.svg');
-			}
+      h1 {
+        text-align: center;
+        font-weight: 900;
+        font-size: 30px;
+      }
 
-			.plan-features li {
-				margin-bottom: .5rem;
+      h2 {
+        text-align: center;
+      }
 
-			}
+      h2 span {
+        font-size: 14px;
+        color: rgb(150, 150, 150);
+        font-weight: 200;
+        font-style: italic;
+      }
 
-			button{
-				background-color: #475AC0;
-				color: white;
-				border: none;
-				width: 100%;
-				padding: 16px 20px;
-			}
-		</style>
-	</head>
-	<body>
-		<section class="learn">
-			<!-- Practice area start -->
+	  hr{		
+		background-color: lightgray;
+		border: 2px solid rgba(211, 211, 211, 0.507);
+		opacity: 50%;
+	  }
 
-			<h1>Platinum</h1>
-			<h2>$45 <span>per month</span></h2>
+      .plan-features {
+        padding: 0;
+        list-style: circle inside url("images/example/green-checkmark.svg");	
+		    margin: 30px 0;
+      }
 
-			<hr>
+      .plan-features li {
+        margin-bottom: 0.5rem;
+        
+      }
 
-			<ul class="plan-features">
-				<li><strong>Unlimited</strong> Websites</li>
-				<li><strong>20</strong> GB Web Space</li>
-				<li><strong>~ 100,000</strong> Visits Monthly</li>
-				<li><strong>Unmetered</strong> Traffic</li>
-				<li><strong>Free</strong> SSL</li>
-			</ul>
+      button {
+        background-color: #475ac0;
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 16px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="learn">
+      <!-- Practice area start -->
 
-			<button>Choose Plan</button>
+      <h1>Platinum</h1>
+      <h2>
+        $45 <br />
+        <span>per month</span>
+      </h2>
 
-			<!-- Practice area end -->
-		</section>
+      <hr>
 
-		<section class="preview" data-content="lesson 3-11: Styling Lists in CSS">
-			<img width="504px" src="images/reference/pricing-plan.png" alt="Reference image" />
-		</section>
-	</body>
+      <ul class="plan-features">
+        <li><strong>Unlimited</strong> Websites</li>
+        <li><strong>20</strong> GB Web Space</li>
+        <li><strong>~ 100,000</strong> Visits Monthly</li>
+        <li><strong>Unmetered</strong> Traffic</li>
+        <li><strong>Free</strong> SSL</li>
+      </ul>
+
+      <button>Choose Plan</button>
+
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="lesson 3-11: Styling Lists in CSS">
+      <img
+        width="504px"
+        src="images/reference/pricing-plan.png"
+        alt="Reference image"
+      />
+    </section>
+  </body>
 </html>
