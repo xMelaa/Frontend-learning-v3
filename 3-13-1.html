@@ -1,80 +1,173 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>HTML and CSS for Complete Beginners: Example 3-13-1</title>
+    <title>HTML and CSS for Complete Beginners: Example 3-13-1</title>
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-		<style>
-			* {
-				box-sizing: border-box;
-			}
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-			body {
-				font-family: 'Poppins', sans-serif;
-			}
+      body {
+        font-family: "Poppins", sans-serif;
+      }
 
-			.card {
-				border-radius: 16px;
-				width: 561px;
-				height: 297px;
-				margin-bottom: 2rem;
-			}
+      .card {
+        border-radius: 16px;
+        width: 561px;
+        height: 297px;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+      }
 
-			#viking{
-				background-image: url('images/example/bg-elephant.jpg');
-			}
+      h2{
+        font-weight: 900;
+        margin-bottom: 0;
+        font-size: 26px;
+        margin-top: 0;
+        color: #1A2731;
+      }
+      .info {
+        width: 260px;
+        margin-left: 260px;
+        
+      }
 
-			#sorceress{
-				background-image: url('images/example/bg-cat.jpg');
-			}
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
 
-			#fashionista{
-				background-image: url('images/example/bg-bunny.jpg');
-			}
-		</style>
-	</head>
-	<body>
-		<section class="learn">
-			<!-- Practice area start -->
+      li {
+        display: inline-block;
+        margin-right: 30px;
+      }
 
-			<div class="card" id="viking">
-				<!-- <h2>The Viking</h2>
+      .title{
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #1A2731;
+      }
 
-				<ul class="stats">
-					<li>
-						<p class="title">68%</p>
-						<p>Win Rate</p>
-					</li>
-					<li>
-						<p class="title">522</p>
-						<p>Games Played</p>
-					</li>
-				</ul> -->
-			</div>
+      p{        
+        color: rgb(95, 95, 95);        
+        margin: 0;
+      }
 
-			<div class="card" id="sorceress"></div>
+      #viking {
+        background-image: url("images/example/bg-elephant.jpg");
+      }
 
-			<div class="card" id="fashionista"></div>
+      #sorceress {
+        background-image: url("images/example/bg-cat.jpg");
+      }
 
-			<!-- Practice area end -->
-		</section>
+      #fashionista {
+        background-image: url("images/example/bg-bunny.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <section class="learn">
+      <!-- Practice area start -->
 
-		<section class="preview" data-content="Lesson 3-13: Styling Backgrounds in CSS">
-			<img width="720px" src="images/reference/characters.png" alt="Reference image" />
-			<p>
-				Graphics from Envato Elements: <br><br>
-				<a href="https://elements.envato.com/elephant-character-illustration-EABS3JK" target="_blank">Elephant Character Illustration</a><br>
-				<a href="https://elements.envato.com/cute-cat-character-illustration-6X93TJY" target="_blank">Cute Cat Character Illustration</a><br>
-				<a href="https://elements.envato.com/cute-bunny-illustration-D85GZDJ" target="_blank">Cute Bunny Illustration</a>
-			</p>
-		</section>
-	</body>
+      <div class="card" id="viking">
+        <div class="info">
+          <h2>The Viking</h2>
+
+          <ul class="stats">
+            <li>
+              <p class="title">68%</p>
+              <p>Win Rate</p>
+            </li>
+            <li>
+              <p class="title">522</p>
+              <p>Games Played</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" id="sorceress">
+        <div class="info">
+          <h2>The Sorceress</h2>
+
+          <ul class="stats">
+            <li>
+              <p class="title">97%</p>
+              <p>Win Rate</p>
+            </li>
+            <li>
+              <p class="title">1922</p>
+              <p>Games Played</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" id="fashionista">
+        <div class="info">
+          <h2>The Fashionista</h2>
+
+          <ul class="stats">
+            <li>
+              <p class="title">24%</p>
+              <p>Win Rate</p>
+            </li>
+            <li>
+              <p class="title">124</p>
+              <p>Games Played</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Practice area end -->
+    </section>
+
+    <section
+      class="preview"
+      data-content="Lesson 3-13: Styling Backgrounds in CSS"
+    >
+      <img
+        width="720px"
+        src="images/reference/characters.png"
+        alt="Reference image"
+      />
+      <p>
+        Graphics from Envato Elements: <br /><br />
+        <a
+          href="https://elements.envato.com/elephant-character-illustration-EABS3JK"
+          target="_blank"
+          >Elephant Character Illustration</a
+        ><br />
+        <a
+          href="https://elements.envato.com/cute-cat-character-illustration-6X93TJY"
+          target="_blank"
+          >Cute Cat Character Illustration</a
+        ><br />
+        <a
+          href="https://elements.envato.com/cute-bunny-illustration-D85GZDJ"
+          target="_blank"
+          >Cute Bunny Illustration</a
+        >
+      </p>
+    </section>
+  </body>
 </html>

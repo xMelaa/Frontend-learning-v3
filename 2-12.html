@@ -1,117 +1,167 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>HTML and CSS for Complete Beginners: Example 2-12</title>
+    <title>HTML and CSS for Complete Beginners: Example 2-12</title>
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-		<style>
-			*{
-				box-sizing: border-box;
-				font-family: 'Poppins', sans-serif;
-				color: #132A3B;
-			}
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        color: #132a3b;
+      }
 
-			h1{
-				font-weight: 900;
-				font-size: 32px;
-			}
-			
-			table{
-				border: solid 1px lightgray;
-				border-radius: 5px;
-				border-collapse: collapse; /*to sprawia ze nie ma odstepow miedzy komorkami */
-			}
+      h1 {
+        font-weight: 900;
+        font-size: 32px;
+      }
 
-			th{
-				background-color: #132A3B;
-				color: lightgray;
-			}
+      table {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        border-collapse: collapse; /*to sprawia ze nie ma odstepow miedzy komorkami */
+        margin-top: 50px;
+      }
 
-			th, td{
-				
-				border-bottom: 1px solid #ddd;
-			}
+      th {
+        background-color: #132a3b;
+        color: #aab2b8;
+        text-align: left;
+        padding: 20px 60px 20px 30px;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
 
-			tfoot tr{
-				background-color: #EFF0F0;
-			}
-		</style>
-	</head>
+      th,
+      td {
+        border-bottom: 1px solid #ddd;
+      }
 
-	<body class="flip">
-		<section class="learn">
-			<!-- Practice area start -->
+      td {
+        padding: 20px 60px 20px 30px;
+      }
 
-			<h1>Payouts</h1>
+      .status {
+        text-align: center;
+      }
 
-			<table>
-				<thead> <!--naglowek // header-->
-					<tr>
-						<th>Payee</th>
-						<th>Amount</th>
-						<th>Date</th>
-						<th>Status</th>
-					</tr>
-				</thead>
-				<tbody> <!--dane-->
-					<tr> <!--rows-->
-						<td>
-							<b>John Wick</b><br>
-							Shoota Inc
-						</td>
-						<td>$42,272.23</td>
-						<td>Jan 13, 2022</td>
-						<td><span>Processing</span></td>
-					</tr>
-					<tr> 
-						<td>
-							<b>Willem Dafoe</b><br>
-							Spider Inc
-						</td>
-						<td>$27,221.00</td>
-						<td>Dec 07, 2021</td>
-						<td><span>Success</span></td>
-					</tr>
-					<tr> 
-						<td>
-							<b>Chuck Norris</b><br>
-							Roundhouse Inc
-						</td>
-						<td>$42,272.23</td>
-						<td>Oct 20, 2021</td>
-						<td><span>Success</span></td>
-					</tr>
-					<tr> 
-						<td>
-							<b>Nick Cage</b><br>
-							Convicts Inc
-						</td>
-						<td>$13,821.72</td>
-						<td>Oct 14, 2021</td>
-						<td><span>Reverted</span></td>
-					</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-						<td>Total Paid</td>
-						<td colspan="3">$90,296.95</td>
-					</tr>
-				</tfoot>
-			</table>
+      #processing {
+        background-color: #d4edff;
+        color: #29a2ff;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 50px;
+      }
 
-			<!-- Practice area end -->
-		</section>
+      #success {
+        background-color: #e2f9dd;
+        color: #5bc52e;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 50px;
+      }
 
-		<section class="preview" data-content="lesson 2-12: Displaying Tabular Data with Tables">
-			<img width="903" src="images/reference/table.png" alt="Reference image" />
-		</section>
-	</body>
+      #reverted {
+        background-color: #ffd4d4;
+        color: #f44b26;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 50px;
+      }
+
+      tfoot tr {
+        background-color: #eff0f0;
+      }
+
+      tfoot tr td {
+        color: #78848e;
+      }
+    </style>
+  </head>
+
+  <body class="flip">
+    <section class="learn">
+      <!-- Practice area start -->
+
+      <h1>Payouts</h1>
+
+      <table>
+        <thead>
+          <!--naglowek // header-->
+          <tr>
+            <th>Payee</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th class="status">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--dane-->
+          <tr>
+            <!--rows-->
+            <td>
+              <b>John Wick</b><br />
+              Shoota Inc
+            </td>
+            <td>$42,272.23</td>
+            <td>Jan 13, 2022</td>
+            <td class="status"><span id="processing">Processing</span></td>
+          </tr>
+          <tr>
+            <td>
+              <b>Willem Dafoe</b><br />
+              Spider Inc
+            </td>
+            <td>$27,221.00</td>
+            <td>Dec 07, 2021</td>
+            <td class="status"><span id="success">Success</span></td>
+          </tr>
+          <tr>
+            <td>
+              <b>Chuck Norris</b><br />
+              Roundhouse Inc
+            </td>
+            <td>$6,982.00</td>
+            <td>Oct 20, 2021</td>
+            <td class="status"><span id="success">Success</span></td>
+          </tr>
+          <tr>
+            <td>
+              <b>Nick Cage</b><br />
+              Convicts Inc
+            </td>
+            <td>$13,821.72</td>
+            <td>Oct 14, 2021</td>
+            <td class="status"><span id="reverted">Reverted</span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><strong>Total Paid</strong></td>
+            <td colspan="3"><strong>$90,296.95</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <!-- Practice area end -->
+    </section>
+
+    <section
+      class="preview"
+      data-content="lesson 2-12: Displaying Tabular Data with Tables"
+    >
+      <img width="903" src="images/reference/table.png" alt="Reference image" />
+    </section>
+  </body>
 </html>
