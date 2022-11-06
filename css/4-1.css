@@ -1,7 +1,7 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -13,18 +13,18 @@ body {
 
 .container {
   text-align: center;
-    width: 85%;
-    margin: 0 auto;
-    
+  width: 85%;
+  margin: 0 auto;
 }
 
-.container.small{
-    width: 60%;
-    max-width: 640px;
+.container.small {
+  width: 60%;
+  max-width: 640px;
 }
 
-section, #main-header{
-    padding: 240px 0;
+section,
+#main-header {
+  padding: 240px 0;
 }
 
 h1 {
@@ -53,23 +53,23 @@ h3 {
   margin-bottom: 2rem;
 }
 
-h3.large{
-    font-size: 57px;
-    margin-top: 32px;
+h3.large {
+  font-size: 57px;
+  margin-top: 32px;
 }
 
 .btn {
   text-decoration: none;
-  font-weight: 700;   
+  font-weight: 700;
   color: #9f7657;
   border: 1px solid #9f7657;
   padding: 24px 64px;
 }
 
-.btn:hover{
-    background-color: rgb(60, 58, 71);
-    border-color: rgb(60, 58, 71);
-    color: white;
+.btn:hover {
+  background-color: rgb(60, 58, 71);
+  border-color: rgb(60, 58, 71);
+  color: white;
 }
 
 #our-chairs {
@@ -79,20 +79,20 @@ h3.large{
   background-color: #eff0ea;
 }
 
-h3+p{
-    max-width: 50em;
+h3 + p {
+  max-width: 50em;
 }
 
 .section-intro {
   color: rgba(60, 58, 71, 0.8);
-  font-weight: 300;  
+  font-weight: 300;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 
 p {
-  font-weight: 400; 
+  font-weight: 400;
   margin-bottom: 24px;
 }
 
@@ -131,49 +131,48 @@ h4 {
   color: white;
 }
 
-.dark label{
-    opacity: 80%;    
+.dark label {
+  opacity: 80%;
 }
 
 #contact-us .section-intro {
   color: white;
 }
 
-form div{
-    margin-bottom: 32px;
-    
+form div {
+  margin-bottom: 32px;
 }
 
-form label{
-    display: block;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    text-align: start;
+form label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-align: start;
 }
 
 form input,
 form textarea,
-form button{
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 1.55;
+form button {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
 }
 
 form input,
-form textarea{
-    background-color: rgba(0, 0, 0, 0.1);
-    border: none;
-    padding: 32px;
-    width: 100%;
-    color: white;
-    resize: none;
+form textarea {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 32px;
+  width: 100%;
+  color: white;
+  resize: none;
 }
 
 form input:focus,
-form textarea:focus{
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.2);
+form textarea:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .submit-btn {
@@ -182,81 +181,86 @@ form textarea:focus{
   border: 1px solid white;
   padding: 24px 64px;
   text-decoration: none;
-  font-weight: 700;  
+  font-weight: 700;
   width: 100%;
   cursor: pointer;
 }
 
-.submit-btn:hover{
-    background-color: white;
-    color: #3c3a47;
+.submit-btn:hover {
+  background-color: white;
+  color: #3c3a47;
 }
 
-p.muted{
-    opacity: 50%;
-    margin-top: 32px;
+p.muted {
+  opacity: 50%;
+  margin-top: 32px;
 }
 
-p.large{
-    font-weight: 300;
-    font-size: 32px;
-    letter-spacing: -0.03em;
-   
-    line-height: 48px;
-    margin-top: 32px;
+p.large {
+  font-weight: 300;
+  font-size: 32px;
+  letter-spacing: -0.03em;
+
+  line-height: 48px;
+  margin-top: 32px;
 }
 
-a{
-    color: #9f7657;
-    text-decoration: none;
-    font-weight: 700;
+a {
+  color: #9f7657;
+  text-decoration: none;
+  font-weight: 700;
 }
 
-a:hover{
-    color: rgb(60, 58, 71);
+a:hover {
+  color: rgb(60, 58, 71);
 }
 
-.social-media{
-    display: inline-flex;
-    gap: 48px;
-    margin-top: 128px;
+.social-media {
+  display: inline-flex;
+  gap: 48px;
+  margin-top: 128px;
 }
 
-footer{
-    padding: 96px 0;
+footer {
+  padding: 96px 0;
 }
 
 @media screen and (max-width: 600px) {
-    h1, h3.large{
-        font-size: 2.3rem;
-        line-height: 64px;
-    }
-    h2, p.large{
-        font-size: 1.3rem;
-    }
+  h1,
+  h3.large {
+    font-size: 2.3rem;
+    line-height: 64px;
+  }
+  h2,
+  p.large {
+    font-size: 1.3rem;
+  }
 
-    h3{
-        font-size: 1.8rem;
-    }
+  h3 {
+    font-size: 1.8rem;
+  }
 
-    .container.small{
-        width: 85%;
-    }
+  .container.small {
+    width: 85%;
+  }
 
-    #main-header, section{
-        padding: 6rem 0;
-    }
+  #main-header,
+  section {
+    padding: 6rem 0;
+  }
 
-    footer{
-        padding: 2.5rem 0;
-    }
+  footer {
+    padding: 2.5rem 0;
+  }
 
-    .social-media{margin-top: 64px;}
+  .social-media {
+    margin-top: 64px;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .gallery{
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
