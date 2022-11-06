@@ -1,11 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: #3c3a47;
+  font-size: 18px; /* deafult font size */
+  line-height: 1.55;
 }
 
 .container {
   text-align: center;
-  margin: 240px 0;
+    width: 85%;
+    margin: 0 auto;
+    
+}
+
+.container.small{
+    width: 60%;
+    max-width: 640px;
+}
+
+section, #main-header{
+    padding: 240px 0;
 }
 
 h1 {
@@ -13,7 +32,7 @@ h1 {
   font-size: 57px;
   line-height: 86px;
   letter-spacing: -0.05em;
-  margin-top: 128px;
+  margin: 128px 0 16px 0;
 }
 
 h2 {
@@ -25,59 +44,73 @@ h2 {
   margin-bottom: 128px;
 }
 
-.btn {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
-  color: #9f7657;
-  border: 1px solid #9f7657;
-  padding: 24px 64px;
-}
-
-.section-intro {
-  color: rgba(60, 58, 71, 0.8);
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
 h3 {
   font-weight: 700;
   font-size: 43px;
   line-height: 64px;
   letter-spacing: -0.05em;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
-p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
+h3.large{
+    font-size: 57px;
+    margin-top: 32px;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 700;   
+  color: #9f7657;
+  border: 1px solid #9f7657;
+  padding: 24px 64px;
+}
+
+.btn:hover{
+    background-color: rgb(60, 58, 71);
+    border-color: rgb(60, 58, 71);
+    color: white;
 }
 
 #our-chairs {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 240px 0;
   background-color: #eff0ea;
 }
+
+h3+p{
+    max-width: 50em;
+}
+
+.section-intro {
+  color: rgba(60, 58, 71, 0.8);
+  font-weight: 300;  
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+p {
+  font-weight: 400; 
+  margin-bottom: 24px;
+}
+
 .gallery {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 64px;
+  margin: 64px 0;
 }
 
 .gallery div {
   width: 378px;
 }
 
-.gallery div img {
+.gallery img {
   width: 378px;
+  max-width: 100%;
+  margin-bottom: 24px;
 }
 
 .number {
@@ -90,7 +123,7 @@ p {
 h4 {
   font-weight: 700;
   font-size: 18px;
-  line-height: 28px;
+  margin-bottom: 24px;
 }
 
 .dark {
@@ -98,16 +131,132 @@ h4 {
   color: white;
 }
 
+.dark label{
+    opacity: 80%;    
+}
+
 #contact-us .section-intro {
   color: white;
 }
 
+form div{
+    margin-bottom: 32px;
+    
+}
+
+form label{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: start;
+}
+
+form input,
+form textarea,
+form button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+form input,
+form textarea{
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 32px;
+    width: 100%;
+    color: white;
+    resize: none;
+}
+
+form input:focus,
+form textarea:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .submit-btn {
   color: white;
+  background-color: transparent;
   border: 1px solid white;
   padding: 24px 64px;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 28px; 
+  font-weight: 700;  
+  width: 100%;
+  cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color: white;
+    color: #3c3a47;
+}
+
+p.muted{
+    opacity: 50%;
+    margin-top: 32px;
+}
+
+p.large{
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: -0.03em;
+   
+    line-height: 48px;
+    margin-top: 32px;
+}
+
+a{
+    color: #9f7657;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover{
+    color: rgb(60, 58, 71);
+}
+
+.social-media{
+    display: inline-flex;
+    gap: 48px;
+    margin-top: 128px;
+}
+
+footer{
+    padding: 96px 0;
+}
+
+@media screen and (max-width: 600px) {
+    h1, h3.large{
+        font-size: 2.3rem;
+        line-height: 64px;
+    }
+    h2, p.large{
+        font-size: 1.3rem;
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    .container.small{
+        width: 85%;
+    }
+
+    #main-header, section{
+        padding: 6rem 0;
+    }
+
+    footer{
+        padding: 2.5rem 0;
+    }
+
+    .social-media{margin-top: 64px;}
+}
+
+@media screen and (max-width: 800px) {
+    .gallery{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
